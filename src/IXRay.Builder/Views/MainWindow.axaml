@@ -7,12 +7,23 @@
         xmlns:vm="using:IXRay.Builder.ViewModels"
         mc:Ignorable="d"
         Icon="/Assets/avalonia-logo.ico"
-        Title="IX-Ray Builder">
+        Title="IX-Ray Builder"
+        Height="500"
+        Width="600">
     <Design.DataContext>
         <vm:MainViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center" />
+    <Grid RowDefinitions="Auto,Auto">
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" />
+            </MenuItem>
+        </Menu>
+
+        <ScrollViewer Grid.Row="1"
+                      HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
+        </ScrollViewer>
+    </Grid>
 </Window>
