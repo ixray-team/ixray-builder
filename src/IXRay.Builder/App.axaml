@@ -1,0 +1,13 @@
+<Application x:Class="IXRay.Builder.App"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l="using:IXRay.Builder"
+             RequestedThemeVariant="Default">
+    <Application.DataTemplates>
+        <l:ViewLocator />
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <SimpleTheme />
+    </Application.Styles>
+</Application>
