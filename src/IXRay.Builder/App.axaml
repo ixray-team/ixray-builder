@@ -6,7 +6,7 @@
     <Application.DataTemplates>
         <l:ViewLocator />
     </Application.DataTemplates>
-  
+
     <Application.Styles>
         <SimpleTheme />
     </Application.Styles>

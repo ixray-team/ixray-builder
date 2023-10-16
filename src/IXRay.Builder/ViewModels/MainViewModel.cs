@@ -1,6 +1,6 @@
-using CommunityToolkit.Mvvm.ComponentModel;
+using ReactiveUI;
 
 namespace IXRay.Builder.ViewModels;
 
-public class MainViewModel : ObservableObject {
+public class MainViewModel : ReactiveObject {
 }

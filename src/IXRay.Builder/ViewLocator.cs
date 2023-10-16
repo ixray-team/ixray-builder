@@ -3,7 +3,7 @@ using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 
-using CommunityToolkit.Mvvm.ComponentModel;
+using ReactiveUI;
 
 namespace IXRay.Builder;
 
@@ -22,6 +22,6 @@ public class ViewLocator : IDataTemplate {
     }
 
     public bool Match(object? data) {
-        return data is ObservableObject;
+        return data is ReactiveObject;
     }
 }
