@@ -16,9 +16,6 @@
         <None Include="App.manifest">
             <DependentUpon>App.axaml</DependentUpon>
         </None>
-        <None Include="FodyWeavers.xsd">
-            <DependentUpon>FodyWeavers.xml</DependentUpon>
-        </None>
     </ItemGroup>
 
     <ItemGroup>
@@ -28,8 +25,6 @@
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.4" />
         <PackageReference Include="Avalonia.Diagnostics" Version="11.0.4" Condition="'$(Configuration)' == 'Debug'" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.4" />
-        <PackageReference Include="LibGit2Sharp" Version="0.27.2" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
-        <PackageReference Include="ReactiveUI.Fody" Version="19.5.1" />
     </ItemGroup>
 </Project>
